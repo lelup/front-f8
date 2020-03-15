@@ -1,0 +1,37 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    /* kế thừa các thuộc tính box-sizing trong thẻ html; */
+    box-sizing: inherit;
+}
+
+html {
+    /* 100% = 16px */
+    /* HACK 10px - 1rem - 62.5% */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* sans-serif : chủng - tập hợp font chữ ko có chân */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    /* với màn lớn hơn 1200px- kích thước tối đa 1200, màn nhỏ hơn thì kích thước width đúng = kích thước màn */
+    max-width: 100%;
+    /* tự động căn giữa khối này khi nằm trong khối khác */
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
